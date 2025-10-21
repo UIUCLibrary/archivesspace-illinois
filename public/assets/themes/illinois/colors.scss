@@ -1,0 +1,39 @@
+/* colors and icons for your institution */
+
+$black: $il-black;
+$darkest: $il-storm-darker-2;
+$white: $il-white;
+$darkblue: $il-industrial;
+$midblue: $il-blue;
+$lightblue: $il-blue;
+$darkshade: $il-storm-lighter-1;
+$shade: $il-storm-lighter-3;
+$lightshade: $il-storm-lighter-4;
+$highlight: #f7d309;
+
+/* this is where you can change colors for your institution */
+
+$primary-color: $lightblue;
+$secondary-color: $midblue;
+$accent-color: $darkblue;
+$border-accent: $darkblue;
+$border: $shade;
+$image-background: $shade;
+$row-background: $lightshade;
+$button-background: $lightblue;
+$alt-button-background: $lightshade;
+$alt-button-color: $darkshade;
+$light-neutral: $lightshade;
+$breadcrumb-link: $darkblue;
+
+$collection-color: $il-altgeld;
+$subject-color: $il-altgeld;
+$container-color: $il-altgeld;
+$agent-color: $il-altgeld;
+$record-color: $il-altgeld;
+$repository-color: $il-altgeld;
+$classification-color: $il-altgeld;
+$accession-color: $collection-color;
+$digital-object-color: $collection-color;
+$archival-object-color: $il-altgeld;
+$folder-color: $il-altgeld;

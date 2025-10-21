@@ -1,0 +1,187 @@
+// Color definitions from https://cdn.brand.illinois.edu/illinois.css
+@il-orange: #FF5F05;
+@il-orange-40: #A72F10;
+@il-altgeld: #C84113;
+@il-altgeld-darker-1: #983220;
+@il-blue: #13294B;
+@il-blue-10: #11181D;
+@il-blue-15: #000333;
+@il-blue-30: #2F4668;
+@il-blue-50: #4877B8;
+@il-blue-70: #98AFD2;
+@il-blue-80: #B5C8E2;
+@il-blue-90: #E1E7F1;
+@il-blue-lighter-1: #3A4461;
+@il-blue-lighter-2: #677592;
+@il-blue-lighter-3: #929FB5;
+@il-blue-lighter-4: #BFC9D9;
+@il-blue-darker-1: #000033;
+@il-blue-darker-2: #0E0F20;
+@il-storm: #707372;
+@il-storm-10: #252525;
+@il-storm-30: #474948;
+@il-storm-60: #8E9090;
+@il-storm-70: #AAABAB;
+@il-storm-80: #C6C7C6;
+@il-storm-95: #F4F4F4;
+@il-storm-lighter-1: #8D8F8E;
+@il-storm-lighter-2: #A9ABAA;
+@il-storm-lighter-3: #C6C7C7;
+@il-storm-lighter-4: #F4F4F4;
+@il-storm-darker-1: #4A4C4B;
+@il-storm-darker-2: #252525;
+@il-industrial: #1D58A7;
+@il-industrial-lighter-1: #526FB3;
+@il-industrial-lighter-2: #759BD1;
+@il-industrial-lighter-3: #90AED5;
+@il-industrial-lighter-4: #CAD9EF;
+@il-industrial-darker-1: #2F568C;
+@il-industrial-darker-2: #1F3D7B;
+@il-arches: #009FD4;
+@il-arches-70: #55B6D4;
+@il-arches-80: #8DD1EB;
+@il-arches-90: #C7EDF8;
+@il-arches-95: #E9F6FB;
+@il-arches-50: #277CAB;
+@il-arches-60: #196389;
+@il-arches-lighter-1: #3CB4E5;
+@il-arches-lighter-2: #7FC3E1;
+@il-arches-lighter-3: #A6D7EB;
+@il-arches-lighter-4: #D2EBF5;
+@il-arches-darker-1: #00779F;
+@il-arches-darker-2: #005677;
+@il-harvest: #FCB316;
+@il-prairie: #006230;
+@il-patina: #007E8E;
+@il-berry: #5C0E41;
+@il-earth: #7D3E13;
+@il-white: #FFFFFF;
+@il-black: #000000;
+@ilw-header-menu--background: #e8e9eb;
+
+//
+// Bootstrap Variables Overrides
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+@gray-base:              @il-black;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         @il-industrial;
+@brand-success:         @il-prairie;
+@brand-info:            @il-blue;
+@brand-warning:         #AA660E;
+@brand-danger:          #A72925;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+//** Background color for `<body>`.
+@body-bg:               @il-white;
+//** Global text color on `<body>`.
+@text-color:            @il-storm-darker-2;
+
+//** Global textual link color.
+@link-color:            @il-industrial;
+//** Link hover color set via `darken()` function.
+//@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      @il-blue;
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:  var(--il-font-source-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       var(--il-font-montserrat), Georgia, "Times New Roman", Times, serif;
+@font-size-base:          16px;
+
+//== Navbar
+//
+//##
+@navbar-default-bg:                 @ilw-header-menu--background;
+@navbar-default-link-color:         @il-blue;
+@navbar-default-link-hover-color:   @il-altgeld;
+@navbar-default-link-hover-bg:      @il-white;
+@navbar-default-link-active-color:  @il-altgeld;
+@navbar-default-link-active-bg:     @il-white;
+
+//== Breadcrumbs
+//
+//##
+@breadcrumb-bg: @il-storm-lighter-4;
+
+//== Panels
+//
+//##
+@panel-default-heading-bg:  @il-storm-lighter-4;
+@panel-footer-bg:           @il-storm-lighter-4;
+
+//== Forms
+//
+//##
+//** Default `.form-control` height
+@input-height-base: (20 + (@padding-base-vertical * 2) + 2);
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+// @btn-default-color:              #333;
+// @btn-default-bg:                 #fff;
+// @btn-default-border:             #ccc;
+
+//
+// ArchivesSpace Variables Overrides
+// --------------------------------------------------
+
+// @input-border: #878787;
+// @btn-default-border: @input-border;
+
+// deprecated bootstrap 2.x vars
+// lets phase these out
+
+// @navbarBackgroundHighlight: #ffffff;
+// @navbarBackground: darken(@navbarBackgroundHighlight, 5%);
+// @errorBackground: #f2dede;
+// @successBackground: #dff0d8;
+// @errorText: #b94a48;
+// @infoText: #3a87ad;
+// @successText: #468847;
+// @warningText: #c09853;
+// @inputBackground: @white;
+// @btnBackground: @white;
+// @btnBackgroundHighlight: darken(@white, 10%);
+@linkColor: @link-color;
+@btnPrimaryBackground: @linkColor;
+//@tableBackgroundHover: #f5f5f5; // for hover
+//@baseLineHeight: 20px;
+@baseFontSize: @font-size-base;
+@sansFontFamily: @font-family-sans-serif;
+@baseFontFamily: @sansFontFamily;
+
+// Grays
+// -------------------------
+// @black: #000;
+// @grayDarker: #222;
+// @grayDark: #333;
+// @gray: #555;
+// @grayLight: #999;
+// @grayLighter: #eee;
+// @white: #fff;
+
+// Accent colors
+// -------------------------
+// @blue: #049cdb;
+// @blueDark: #0064cd;
+// @green: #46a546;
+// @red: #9d261d;
+// @yellow: #ffc40d;
+// @orange: #f89406;
+// @pink: #c3325f;
+// @purple: #7a43b6;
