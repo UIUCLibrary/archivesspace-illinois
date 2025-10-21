@@ -1,0 +1,11 @@
+en:
+  resource:
+    finding_aid_filing_title: Sort Title
+    finding_aid_filing_title_tooltip: |
+        <p>A modified version of the formal title. Designed to aid browsing and sorting of title lists.</p>
+        <p>Examples:</p>
+        <ul>
+        <li>Wayne (Bruce M.) Papers</li>
+        <li>Rooney Family Papers</li>
+        <li>Communist Party of the United States Records</li>
+        </ul>
