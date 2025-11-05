@@ -5,7 +5,7 @@ $(function () {
   var initEadIdField = function (scope) {
     scope = scope || $(document.body);
     $eadIdInput = $('input[name="resource[ead_id]"]', scope)
-    if ($eadIdInput.length > 0) {
+    if ($eadIdInput?.length > 0) {
       //make ead_id field readonly
       $eadIdInput.attr('readonly', 'readonly');
       // listen for changes in identifier fields
@@ -41,7 +41,7 @@ $(function () {
     $title.parents('.form-group:first').after($filingTitle.parents('.form-group:first'));
 
     // set initial value of finding_aid_filing_title if empty
-    if ($filingTitle.val().length === 0) {
+    if ($filingTitle.val()?.length === 0) {
       $filingTitle.val($title.val());
     }
 
