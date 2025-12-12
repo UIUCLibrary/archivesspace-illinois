@@ -7,6 +7,7 @@ This plugin customizes ArchivesSpace to meet the specific needs of the Universit
 - University of Illinois Urbana-Champaign branding.
 - Automatic EAD ID generation based on resource identifiers.
 - Moves the Finding Aid Filing Title field after the Title field in the staff interface and relabels it as "Sort Title".
+- Reconfigures "print_to_pdf_job" job types to permit concurrent execution based on the number of threads available to run background jobs (`AppConfig[:job_thread_count]`).
 
 ## Installation
 1. Clone this repository into your ArchivesSpace plugins directory:
