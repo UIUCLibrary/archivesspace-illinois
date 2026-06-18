@@ -65,3 +65,39 @@ class PrintToPDFRunner < JobRunner
 
 end
 #from commit 32053b3
+
+# Returns only records of resources, digital objects and agents that have been
+# deleted since the given timestamp. This is intended to be used by ArcFlow to
+# identify records that need to be removed from the search index without having
+# to fetch all records that have been deleted since the given timestamp, which 
+# may include a large number of records that ArcFlow doesn't need to know about.
+class ArchivesSpaceService < Sinatra::Base
+    Endpoint.get('/delete-feed-restricted')
+    .description("Get a stream of deleted records")
+    .permissions([:index_system])
+    .params()
+    .paged(true)
+    .returns([200, "a list of URIs that were deleted"]) \
+  do
+    modified_since_time = Time.at(params[:modified_since])
+
+    dataset = Tombstone.where { timestamp >= modified_since_time  }.where(
+      Sequel.|(
+        Sequel.like(:uri, '/repositories/%/digital_objects/%'),
+        Sequel.like(:uri, '/repositories/%/resources/%'),
+        Sequel.like(:uri, '/agents/%'),
+      )
+    )
+    dataset = dataset.extension(:pagination).paginate(params[:page], params[:page_size])
+
+    response = {
+      :first_page => dataset.page_range.first,
+      :last_page => dataset.page_range.last,
+      :this_page => dataset.current_page,
+      :results => dataset.map(&:uri)
+    }
+
+    json_response(response)
+  end
+
+end
