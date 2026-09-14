@@ -1,0 +1,8 @@
+# Add or update enumeration names and values in English for ArchivesSpace. Example:
+en:
+  enumeration_names:
+    extent_extent_type: Extent Extent Type
+
+  enumerations:
+    extent_extent_type:
+      cubic_feet: Cubic Feet

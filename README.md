@@ -33,7 +33,7 @@ This plugin customizes ArchivesSpace to meet the specific needs of the Universit
     AppConfig[:frontend_branding_img] = 'themes/illinois/illinois.png'
     AppConfig[:frontend_branding_img_alt_text] = 'University Library - University of Illinois Urbana-Champaign'
     ```
-5.  Combine the `public/public.tar.gz.part.dd` and `frontend/frontend.tar.gz.part.dd` parts and extract them into the the ArchivesSpace `wars` directory to replace the existing `public.war` and `frontend.war` files:
+5.  Combine the `public/public.tar.gz.part.dd` and `frontend/frontend.tar.gz.part.dd` parts and extract them into the ArchivesSpace `wars` directory to replace the existing `public.war` and `frontend.war` files:
     ```bash
     cd /path/to/archivesspace/plugins/archivesspace-illinois
     cat frontend/frontend.tar.gz.part.* | tar -xzvf - -C /path/to/archivesspace/wars

@@ -1,3 +1,12 @@
+Rails.application.config.before_initialize do
+  module ArchivesSpace
+    class Application < Rails::Application
+      plugin_dir = File.expand_path("..", File.expand_path(File.dirname(__FILE__)))
+      config.i18n.load_path += Dir[File.join(plugin_dir, 'locales', '**', '*.yml')]
+    end
+  end
+end
+
 Rails.application.config.after_initialize do
 
   class DigitalObjectComponentsController < ApplicationController

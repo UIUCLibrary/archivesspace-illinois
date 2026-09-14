@@ -1,3 +1,11 @@
+require 'i18n'
+require 'aspace_i18n'
+
+ArchivesSpaceService.loaded_hook do
+  plugin_dir = File.expand_path("..", File.expand_path(File.dirname(__FILE__)))
+  I18n.load_path += Dir[File.join(plugin_dir, 'locales', '**', '*.yml')]
+end
+
 class PrintToPDFRunner < JobRunner
   include JSONModel
 
