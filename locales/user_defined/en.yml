@@ -1,4 +1,0 @@
-# Add or update user defined field names and values in English for ArchivesSpace.
-en:
-  user_defined: &user_defined_attributes
-    string_2: Alma MMS ID

@@ -1,5 +1,13 @@
 # Add or update enumeration names and values in English for ArchivesSpace. Example:
 en:
+  user_defined: &user_defined_attributes
+    string_2: Alma MMS ID
+  
+  location: &location_attributes
+    floor: Location code
+    floor_tooltip: |
+      <p>Used to indicate the location code (e.g., ARC).</p>
+
   enumeration_names:
     extent_extent_type: Extent Extent Type
 
