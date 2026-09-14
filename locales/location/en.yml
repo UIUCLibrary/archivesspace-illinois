@@ -1,0 +1,6 @@
+# Add or update location names and values in English for ArchivesSpace.
+en:
+  location: &location_attributes
+    floor: Location code
+    floor_tooltip: |
+      <p>Used to indicate the location code (e.g., ARC).</p>
