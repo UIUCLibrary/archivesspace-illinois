@@ -17,28 +17,8 @@ en:
     file_server_error: There was a problem with the file server. Please contact your system administrator.
     file_save_error: There was a problem saving the file. Please try again.
     must_be_unique: Must be unique.
-  enumerations:
-    agent_relationship_associative_relator:
-      is_associative_with: Associative with
-    agent_relationship_earlierlater_relator:
-      is_earlier_form_of: Earlier Form of
-      is_later_form_of: Later Form of
-    agent_relationship_parentchild_relator:
-      is_child_of: Child of
-      is_parent_of: Parent of
-    agent_relationship_subordinatesuperior_relator:
-      is_subordinate_to: Is Subordinate to
-      is_superior_of: Is Superior of
-    resource_resource_type:
-      official_records: Official Records
-      personal_papers: Personal Papers
   welcome:
     heading: Welcome to ArchivesSpace
     message: Our Archives Management System.
     message_logged_in: Our Archives Management System.
-  location:
-    floor: Location code
-    floor_tooltip: |
-      <p>Used to indicate the location code (e.g., ARC).</p>
-  user_defined: &user_defined_attributes
-    string_2: Alma MMS ID
+    
