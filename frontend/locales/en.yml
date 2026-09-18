@@ -17,3 +17,8 @@ en:
     file_server_error: There was a problem with the file server. Please contact your system administrator.
     file_save_error: There was a problem saving the file. Please try again.
     must_be_unique: Must be unique.
+  welcome:
+    heading: Welcome to ArchivesSpace
+    message: Our Archives Management System.
+    message_logged_in: Our Archives Management System.
+    

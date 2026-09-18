@@ -4,5 +4,92 @@ en:
     extent_extent_type: Extent Extent Type
 
   enumerations:
+    agent_relationship_associative_relator:
+      is_associative_with: Associative with
+    agent_relationship_earlierlater_relator:
+      is_earlier_form_of: Earlier Form of
+      is_later_form_of: Later Form of
+    agent_relationship_parentchild_relator:
+      is_child_of: Child of
+      is_parent_of: Parent of
+    agent_relationship_subordinatesuperior_relator:
+      is_subordinate_to: Is Subordinate to
+      is_superior_of: Is Superior of
+    container_type:
+      oversize_folder : Oversize Folder
+      oversize_box : Oversize Box
+      flat_box : Flat Box
+      notecard_box : Notecard Box
+      drawer_unit : Drawer Unit
+      framed_item : Framed Item
+      volume : Volume
+      roll : Roll
+      flat_file_drawer : Flat File Drawer
+      flat_file : Flat File
+      pamphlet_binder : Pamphlet Binder
+      audio-visual_recording : Audio-Visual Recording
+      baton : Baton
+      brass_instrument : Brass Instrument
+      cassette : Cassette
+      dat_carton : DAT Carton
+      decorative_box : Decorative Box
+      digital_folder : Digital Folder
+      digital_object : Digital Object
+      electronic_folder : Electronic Folder
+      equipment_box : Equipment Box
+      floppy_diskette_case : Floppy Diskette Case
+      furniture_piece : Furniture Piece
+      instrument_case : Instrument Case
+      keyboard_instrument : Keyboard Instrument
+      luggage : Luggage
+      lyre : Lyre
+      mouthpiece_box : Mouthpiece Box
+      oversize_audio_portfolio_box : Oversize Audio Portfolio Box
+      oversize_panoramic_photo_box : Oversize Panoramic Photo Box
+      oversize_portfolio_box : Oversize Portfolio Box
+      oversize_portfolio_case : Oversize Portfolio Case
+      oversize_textile_box : Oversize Textile Box
+      percussion_instrument : Percussion Instrument
+      sash : Sash
+      scrapbook_page : Scrapbook Page
+      shelf : Shelf
+      small_collections_box : Small Collections Box
+      sound_device : Sound Device
+      stand : Stand
+      steamer_trunk : Steamer Trunk
+      string_instrument : String Instrument
+      sword : Sword
+      textile_box : Textile Box
+      typewriter : Typewriter
+      visual_art : Visual Art
+      woodwind_instrument : Woodwind Instrument
     extent_extent_type:
-      cubic_feet: Cubic Feet
+      folders : Folders
+      microfilm_reels : Microfilm Reels
+      items : Items
+      oversize_folders : Oversize Folders
+      boxes : Boxes
+      photographs : Photographs
+    file_version_file_format_name:
+      word_document : Word Document
+      excel_spreadsheet : Excel Spreadsheet
+      powerpoint_presentation : Powerpoint Presentation
+      pdf_document : PDF Document
+      mpeg_video : MPEG Video
+      zip_archive : ZIP Archive
+      rar_archive : RAR Archive
+      quicktime_video : QuickTime Video
+      bitmap_image : Bitmap Image
+      gif_image : GIF Image
+      jpeg_image : JPEG Image
+      tiff_image : TIFF Image
+      mp3_audio : MP3 Audio
+      wav_audio : WAV Audio
+      wma_audio : WMA Audio
+      midi_audio : MIDI Audio
+      wmv_video : WMV Video
+      avi_video : AVI Video
+      wordperfect_document : WordPerfect Document
+    resource_resource_type:
+      official_records: Official Records
+      personal_papers: Personal Papers
