@@ -10,6 +10,7 @@ This plugin customizes ArchivesSpace to meet the specific needs of the Universit
 - Reconfigures "print_to_pdf_job" job types to permit concurrent execution based on the number of threads available to run background jobs (`AppConfig[:job_thread_count]`).
 - Adds a `delete-feed-restricted` endpoint to return only records of resources, digital objects and agents that have been deleted since a given timestamp to be used by ArcFlow to identify records that need to be removed from the search index without having to fetch all records.
 - Adds file upload support to ArchivesSpace digital object components. Uploaded files are stored temporarily and intended for ingestion into external applications like Omeka, supporting workflows where metadata is managed in ArchivesSpace and digital assets are hosted elsewhere.
+- Adds a "View Top Containers" button to resource pages in the staff interface and the public site (visible only to staff users) that opens the top containers page already filtered to that resource, with the search results loaded automatically.
 
 ## Installation
 1. Clone this repository into your ArchivesSpace plugins directory:

@@ -4,3 +4,6 @@
 <% if controller.controller_name == 'digital_objects' %>
   <%= javascript_include_tag "#{@base_url}/assets/javascripts/file_upload.js" %>
 <% end %>
+<% if controller.controller_name == 'top_containers' && controller.action_name == 'index' %>
+  <%= javascript_include_tag "#{@base_url}/assets/javascripts/top_containers_auto_search.js" %>
+<% end %>

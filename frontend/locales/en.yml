@@ -1,4 +1,6 @@
 en:
+  actions:
+    view_top_containers: View Top Containers
   resource:
     finding_aid_filing_title: Sort Title
     finding_aid_filing_title_tooltip: |

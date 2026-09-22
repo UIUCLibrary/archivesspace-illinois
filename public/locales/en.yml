@@ -1,4 +1,6 @@
 en:
+  actions:
+    view_top_containers: Top Containers
   brand:
     title: Archives and Manuscript Repositories
     title_link_text: Return to the homepage

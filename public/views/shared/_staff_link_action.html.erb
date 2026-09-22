@@ -1,0 +1,17 @@
+<% if AppConfig[:pui_enable_staff_link] %>
+    <a id="staff-link" href="#" class="btn btn-default page_action staff d-none" target="_blank">
+        <i class="fa fa-pencil fa-3x"></i>
+        <br/>
+        <%= t('actions.staff_link') %>
+    </a>
+
+    <% if record.primary_type == 'resource' %>
+        <%# staff-hidden is revealed by smart_staff_links.js once the staff session check passes. %>
+        <a href="<%= File.join(AppConfig[:frontend_proxy_url], "resolve/top_containers?uri=#{record.uri}&autoselect_repo=true") %>"
+           class="btn btn-default page_action staff-hidden d-none" target="_blank">
+            <i class="fa fa-map-marker fa-3x"></i>
+            <br/>
+            <%= t('actions.view_top_containers') %>
+        </a>
+    <% end %>
+<% end %>
