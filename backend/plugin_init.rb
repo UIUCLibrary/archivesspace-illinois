@@ -27,7 +27,7 @@ class PrintToPDFRunner < JobRunner
                                             [ "repository", "linked_agents", "subjects", "digital_object", 'top_container', 'top_container::container_profile'])
         opts = {
           :include_unpublished => @json.job["include_unpublished"] || false,
-          :include_daos => true,
+          :include_daos => false,
           :include_uris => false,
           :use_numbered_c_tags => false
         }

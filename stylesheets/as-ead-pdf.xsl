@@ -659,9 +659,12 @@
                         <xsl:apply-templates select="ead:physloc" mode="overview"/>
                         <xsl:apply-templates select="ead:langmaterial" mode="overview"/>
                         <xsl:apply-templates select="ead:materialspec" mode="overview"/>
+                        <!-- Uncomment the following to add material types and digital objects in the Summary Information -->
+                        <!--
                         <xsl:apply-templates select="ead:dao|../ead:dao" mode="overview"/>
                         <xsl:apply-templates select="ead:daogrp|../ead:daogrp" mode="overview"/>
                         <xsl:apply-templates select="ead:container" mode="overview"/>
+                        -->
                         <xsl:apply-templates select="ead:abstract" mode="overview"/>
                         <xsl:apply-templates select="ead:note" mode="overview"/>
                 </fo:table-body>

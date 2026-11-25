@@ -452,11 +452,17 @@
                     <xsl:apply-templates select="ead:unitdate" mode="overview"/>
                     <xsl:apply-templates select="ead:physdesc" mode="overview"/>        
                     <xsl:apply-templates select="ead:physloc" mode="overview"/> 
+                    <!-- Uncomment the following to add digital objects in the Summary Information -->
+                    <!--
                     <xsl:apply-templates select="ead:dao" mode="overview"/>
                     <xsl:apply-templates select="ead:daogrp" mode="overview"/>
+                    -->
                     <xsl:apply-templates select="ead:langmaterial" mode="overview"/>
                     <xsl:apply-templates select="ead:materialspec" mode="overview"/>
+                    <!-- Uncomment the following to add material types in the Summary Information -->
+                    <!--
                     <xsl:apply-templates select="ead:container" mode="overview"/>
+                    -->
                     <xsl:apply-templates select="ead:abstract" mode="overview"/> 
                     <xsl:apply-templates select="ead:note" mode="overview"/>
                 </dl>
