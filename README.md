@@ -12,6 +12,7 @@ This plugin customizes ArchivesSpace to meet the specific needs of the Universit
 - Adds a `delete-feed-restricted` endpoint to return only records of resources, digital objects and agents that have been deleted since a given timestamp to be used by ArcFlow to identify records that need to be removed from the search index without having to fetch all records.
 - Adds file upload support to ArchivesSpace digital object components. Uploaded files are stored temporarily and intended for ingestion into external applications like Omeka, supporting workflows where metadata is managed in ArchivesSpace and digital assets are hosted elsewhere.
 - Adds a "View Top Containers" button to resource pages in the staff interface and the public site (visible only to staff users) that opens the top containers page already filtered to that resource, with the search results loaded automatically.
+- Refined PDF generation to meet specific needs by simplifying displayed metadata (removing Material Types, Digital Objects, and URIs).
 
 ## Installation
 1. Clone this repository into your ArchivesSpace plugins directory:
@@ -41,5 +42,11 @@ This plugin customizes ArchivesSpace to meet the specific needs of the Universit
     cat frontend/frontend.tar.gz.part.* | tar -xzvf - -C /path/to/archivesspace/wars
     cat public/public.tar.gz.part.* | tar -xzvf - -C /path/to/archivesspace/wars
     ```
-6. Restart ArchivesSpace to apply the changes.
+5.  Replace the `as-ead-html.xsl` and `as-ead-pdf.xsl` files in the ArchivesSpace `stylesheets` directory:
+    ```bash
+    cd /path/to/archivesspace/plugins/archivesspace-illinois
+    cp stylesheets/as-ead-html.xsl /path/to/archivesspace/stylesheets/as-ead-html.xsl
+    cp stylesheets/as-ead-pdf.xsl /path/to/archivesspace/stylesheets/as-ead-pdf.xsl
+    ```
+7. Restart ArchivesSpace to apply the changes.
 
